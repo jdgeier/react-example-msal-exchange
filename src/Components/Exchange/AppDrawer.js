@@ -13,11 +13,11 @@ import AddIcon from '@material-ui/icons/Add'
 import Fab from '@material-ui/core/Fab';
 import ExchangeAppBar from './AppBar'
 import Grid from '@material-ui/core/Grid';
-import MessagesListContainer from './MessagesListContainer'
-import MessageContainer from './MessageContainer'
+import MessagesListComponent from './MessagesList'
+import MessageComponent from './Message'
 
 const drawerWidth = 240;
- 
+
 const useStyles = makeStyles(theme => ({
     root: {
         display: 'flex',
@@ -93,10 +93,10 @@ export default function AppDrawer() {
                 <main className={classes.content}>
                     <Grid container spacing={3} >
                         <Grid item xs={4}>
-                            <MessagesListContainer />
+                            <MessagesListComponent />
                         </Grid>
                         <Grid item xs={8}>
-                            <MessageContainer />
+                            <MessageComponent />
                         </Grid>
                     </Grid>
                 </main>

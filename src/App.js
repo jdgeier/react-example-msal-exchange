@@ -13,6 +13,8 @@ class App extends Component {
   }
   accountInfoCallback = accountInfo => {
     this.setState({ accountInfo });
+    debugger
+    localStorage.setItem('accessToken', accountInfo.jwtIdToken)
   };
   render() {
     return (

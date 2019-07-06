@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { AzureAD, LoginType, MsalAuthProviderFactory } from 'react-aad-msal';
-import { basicReduxStore } from '../../reduxStore';
+//import { basicReduxStore } from '../../reduxStore';
 
 class LoginComponent extends React.Component {
     constructor(props) {
@@ -16,7 +16,7 @@ class LoginComponent extends React.Component {
     };
 
     userJustLoggedIn = receivedAccountInfo => {
-        
+
         this.props.accountInfoCallback(receivedAccountInfo);
     };
 
